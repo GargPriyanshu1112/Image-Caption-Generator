@@ -31,16 +31,14 @@ def get_all_captions(filepath):
 import random
 import matplotlib.pyplot as plt
 import os
-# IMAGES_DIR = os.path.join("Data", "images")
 
-
-def get_sample(mappings):
+def get_sample(mappings, image_dirpath):
     # Get random image and its captions
     image_name, captions_list = random.choice(list(mappings.items()))
 
     # Display the image and its captions
     print(f"\nIMAGE:   {image_name}")
-    image_path = os.path.join(IMAGES_DIR, image_name)
+    image_path = os.path.join(image_dirpath, image_name)
     image = plt.imread(image_path)
     plt.imshow(image)
     plt.axis(False)
