@@ -31,7 +31,7 @@ def get_all_captions(filepath):
 import random
 import matplotlib.pyplot as plt
 import os
-IMAGES_DIR = os.path.join("Data", "images")
+# IMAGES_DIR = os.path.join("Data", "images")
 
 
 def get_sample(mappings):
